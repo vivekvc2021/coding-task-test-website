@@ -1,38 +1,51 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
   <style>
-
-  body {
-    background-color: #000000;
-  }
-
-  .header{
-    /* color */
-    color: #CEB888;
-  }
-
-  h4 {
-    color: #CEB888;
-  }
-
-  .BUTTONACTIVITIES {
-        background-color: #CEB888;
-        border: 2px solid black;
-        color: black;
-        padding: 5px 10px;
-        text-align: center;
-        /* display: inline-block; */
-        font-size: 20px;
-        margin: 10px 30px;
-        border-radius: 13px;
-        cursor: pointer;
-
+    body {
+      background-color: #000000;
     }
-    .text-center {
+
+    .header {
+      /* color */
+      color: #CEB888;
+    }
+
+    h4 {
+      color: #CEB888;
+    }
+
+    h2 {
+      color: #CEB888;
+      text-align: left;
+      margin: 15px;
+    }
+
+    .BUTTONACTIVITIES {
+      background-color: #CEB888;
+      border: 2px solid black;
+      color: black;
+      padding: 5px 10px;
       text-align: center;
+      /* display: inline-block; */
+      font-size: 20px;
+      margin: 10px 30px;
+      border-radius: 13px;
+      cursor: pointer;
+
     }
+
+    .image {
+      width: 200px;
+      float: right;
+      margin-right: 10px;
+    }
+
+    .text-center {
+    text-align: center;
+  }
 
     .footer {
       position: fixed;
@@ -44,41 +57,107 @@
       text-align: center;
     }
 
-   </style>
+    .column {
+      float: left;
+      width: 33.33%;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
 </head>
+
 <body>
 
-<a href="index.html">
-<img src="purdue_logo_png.png" alt="Purdue University" style="height:30px;">
-</a>
+  <a href="index.html">
+    <img src="purdue_logo_png.png" alt="Purdue University" style="height:30px;">
+  </a>
 
-<div class="text-center">
-<h1 class = "header">Purdue University: IEEE CS Volunteer Paths</h1>
+  <div class="text-center">
+    <center>
+      <h1 class="header">Purdue University: IEEE CS Volunteer Paths</h1>
+    </center>
 
-<br></br>
-<br></br>
+    <br></br>
+    <br></br>
 
-<a href="cp_zero.html" class = "BUTTONACTIVITIES">Conference Paths</a>
+    <!-- Conference Paths -->
+    <div style="color:red">
+      <center>
 
-<br></br>
-<br></br>
-<br></br>
+        <!-- Column 1 -->
+        <div class="column">
+          <h2>Conference Paths <img src="purdue_arrow.png" class="image" alt="Purdue University" style="height:30px;">
+          </h2>
+
+          <br></br>
+          <br></br>
+          <br>
+
+          <h2>Journal/Magazine Paths <img src="purdue_arrow.png" class="image" alt="Purdue University"
+              style="height:30px; width:150px;"></h2>
+          <br></br>
+          <br></br>
+          <br>
+          <h2>Member and Geographical<img src="purdue_arrow.png" class="image" alt="Purdue University"
+              style="height:30px;"></h2>
+          <h2>Activities Track</h2>
+        </div>
 
 
-<a href="jmp_zero.html" class = "BUTTONACTIVITIES">Journal/Magazine Paths</a>
+        <!-- Column 2 -->
+        <div class="column">
+          <br>
+          <a href="cp_zero.html" class="BUTTONACTIVITIES">Volunteer as Student <img src="purdue_arrow.png" class="image"
+              alt="Purdue University" style="height:30px;"></a>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <a href="jmp_zero.html" class="BUTTONACTIVITIES">Reviewer for a Journal <img src="purdue_arrow.png"
+              class="image" alt="Purdue University" style="height:30px; width:195px;"></a>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br>
+          <a href="mga_zero.html" class="BUTTONACTIVITIES">Student CS Chapter Involvement <img src="purdue_arrow.png"
+              class="image" alt="Purdue University" style="height:30px; width: 110px;"></a>
+        </div>
 
-<br></br>
-<br></br>
-<br></br>
+
+        <!-- How to blur: filter: blur(5px); in style -->
+
+        <!--Column 3 -->
+        <div class="column">
+          <br>
+          <a href="cp_one.html" class="BUTTONACTIVITIES" style="filter:blur(4px)">Part of Org. Committee on
+            Conference</a>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <a href="jmp_one.html" class="BUTTONACTIVITIES" style="filter:blur(4px)">Editorial Board Member of a
+            Journal</a>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br>
+          <a href="mga_one.html" class="BUTTONACTIVITIES" style="filter:blur(4px)">Arv MGA Committee Participation</a>
+        </div>
+      </center>
+    </div>
 
 
-<a href="mga_zero.html" class = "BUTTONACTIVITIES">Member and Geographical Activities Track</a>
-
-</div>
-
-<div class = "footer">
-  <footer class="footer"> By Vivek Chudasama <br> June 14th, 2022 </footer>
-</div>
+    <div class="footer">
+      <footer class="footer"> By Vivek Chudasama <br> June 14th, 2022 </footer>
+    </div>
 
 </body>
+
 </html>
