@@ -16,6 +16,12 @@
             color: #CEB888;
         }
 
+        h2 {
+            color: #CEB888;
+            text-align: left;
+            margin: 15px;
+        }
+
         .BUTTONACTIVITIES {
             background-color: #CEB888;
             border: 2px solid black;
@@ -27,7 +33,14 @@
             margin: 10px 30px;
             border-radius: 13px;
             cursor: pointer;
+            font-size: 14px;
 
+        }
+
+        .image {
+            width: 200px;
+            float: center;
+            margin-right: 10px;
         }
 
         .text-center {
@@ -44,42 +57,57 @@
             text-align: center;
         }
 
-        .finish {
+        .column {
+            float: left;
+            width: 50%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .path {
+            text-align: left;
             color: #CEB888;
+            font-size: 200%;
         }
     </style>
 </head>
 
-
 <body>
-
-
     <a href="index.html">
         <img src="purdue_logo_png.png" alt="Purdue University" style="height:30px;">
     </a>
 
     <div class="text-center">
+        <center>
+            <h1 class="header">Purdue University: IEEE CS Volunteer Paths</h1>
+        </center>
 
-        <h1 class="header"> Purdue University: IEEE CS Volunteer Paths </h1>
-        <h3 class="header">Member and Geographical Activities Track</h3>
-        <h4 class="header">VP, MGA Board</h4>
-        <a href="index.html" class="BUTTONACTIVITIES" style="font-size:20px">Home</a>
+        <h2 style="text-align:center; font-size:27px"><a href="conference_path.html" style="color:#CEB888">Conference
+                Path</a> > Board Member</h2>
+        <a href="index.html" class="BUTTONACTIVITIES">Home</a>
 
-        <br> </br>
-        <br> </br>
+        <br></br>
+        <br></br>
+        <p style="color:#CEB888">text goes here</p>
 
 
-        <img src="purduepete.jpeg" alt="Purdue Pete Clapping" height=300px>
-        <h2 class="finish"> You've reached the end! </h2>
 
-        <a href="mga_one.html" class="BUTTONACTIVITIES">Back</a>
 
-    </div>
 
-    <div class="footer">
-        <footer class="footer"> By Vivek Chudasama <br> June 14th, 2022 </footer>
-    </div>
 
 </body>
+
+
+
+
+
+
+
+
 
 </html>
